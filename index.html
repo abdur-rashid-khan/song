@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="resources/img/transport.png" type="image/x-icon">
+    <link rel="stylesheet" href="font wasame/css/all.min.css">
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/css/aos.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="vendors/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="container">
+                <div class="menu_all">
+                    <div class="menu_mane">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="resources/img/footer-logo.png" class="img-fluid" alt="banner">
+                            </a>
+                        </div>
+                        <div class="menu_items">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#events">Events</a></li>
+                                <li><a href="#speaker">Speaker</a></li>
+                                <li><a href="#subscribe">Subscribe</a></li>
+                                <li><a href="#sponsors">Sponsors</a></li>
+                                <li><a href="#about">About</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile_menu">
+                            <div onclick="openMenu()" class="menu_icon">
+                                <a  href="javascript:void(0)">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                            <div id="myNav" class="overlay">
+                                <div id="menu-sazing">
+                                    <a id="closeBtn" onclick="closeMenu()" href="javascript:void(0)">&times;</a>
+                                    <div class="overlay_content">
+                                        <a style="margin-top: 9rem;" onclick="closeMenu()" href="#home">Home</a>
+                                        <a onclick="closeMenu()" href="#events">Events</a>
+                                        <a onclick="closeMenu()"  href="#speaker">Speaker</a>
+                                        <a onclick="closeMenu()" href="#subscribe">Subscribe</a>
+                                        <a onclick="closeMenu()" href="#sponsors">Sponsors</a> 
+                                        <a onclick="closeMenu()" href="#about">About</a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="time_zone">
+                <div class="day">
+                    <h2 class="number">0:0</h2>
+                    <h3>Days</h3>
+                </div>
+                <div class="hor">
+                    <h2 class="number">0:0</h2>
+                    <h3>Hourse</h3>
+                </div>
+                <div class="min">
+                    <h2 class="number">0:0</h2>
+                    <h3>Minits</h3>
+                </div>
+                <div class="secound">
+                    <h2 class="number">0:0</h2>
+                    <h3>Secounds</h3>
+                </div>
+            </div>
+            <div class="bannar_text">
+                <h1  > DESIGN <strong style="color: rgb(16, 235, 16);">& DEV</strong> CONFERENCE</h1>
+                <h2>OCTOBER, 17th - 19th, 2020</h2>
+                <p>Jurys Inn Brighton Waterfront Hotel , <span id="typing"></span></p>
+                <a href="#">Register now </a>
+            </div>
+        </div>
+    </header>
+    <section id="events">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0099ff" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,245.3C384,245,480,203,576,202.7C672,203,768,245,864,250.7C960,256,1056,224,1152,213.3C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+
+        <div class="container">
+            <div class="evets_header">
+                <h2>Video Glarari</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-lg-6">
+                    <div class="video_player">
+                        <img onclick="play_video('resources/img/arfinrumi.mp4')" src="resources/img/2021-07-03 (2).png" class="img-fluid" alt="">
+                        <span><i  onclick="play_video('resources/img/arfinrumi.mp4')" class="far fa-play-circle"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6">
+                    <div class="event_video_list">
+                        <ul>
+                            <li><a href="#events"><img onclick="play_video('resources/img/y2mate.com - CHAINA MEYE  HRIDOY KHAN  WIND OF CHANGE  PRESEASON  at GAAN BANGLA TV_v240P.mp4')" class="img-fluid" src="resources/img/hridoy_0.jpg" alt="video"> <i onclick="play_video('resources/img/y2mate.com - CHAINA MEYE  HRIDOY KHAN  WIND OF CHANGE  PRESEASON  at GAAN BANGLA TV_v240P.mp4')" class="far fa-play-circle"></i> </a> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae delectus fugit possimus labore modi?</p></li>
+                            <li><a href="#events"><img onclick="play_video('resources/img/y2mate.com - Teri Mitti Female Version  Kesari  Arko feat Parineeti Chopra  Akshay Kumar  Manoj Muntashir_480p.mp4')"  class="img-fluid" src="resources/img/2021-07-05 (1).png" alt="video"> <i onclick="play_video('resources/img/y2mate.com - Teri Mitti Female Version  Kesari  Arko feat Parineeti Chopra  Akshay Kumar  Manoj Muntashir_480p.mp4')"class="far fa-play-circle"></i> </a> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae delectus fugit possimus labore modi?</p></li>
+                            <li><a href="#events"><img onclick="play_video('resources/img/y2mate.com - বব  জমস  Baba  James  Jamuna TV Concert_360p.mp4')" class="img-fluid" src="resources/img/51387593_416903118851442_8345173979283062784_n.jpg" alt="video"> <i onclick="play_video('resources/img/y2mate.com - বব  জমস  Baba  James  Jamuna TV Concert_360p.mp4')"  class="far fa-play-circle"></i> </a> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis molestiae delectus fugit possimus labore modi?</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="video_plyer">
+                <video id="my_video" controls width="100%" src="resources/img/Baba .mp4" type="video/mp4"> 
+                </video>
+                <span onclick="cloce_btn()" id="close"><i class="fas fa-times"></i></span>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="pepole">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container">
+            <div class="owl-carousel owl-theme fadeInUp">
+                <div class="items">
+                    <div class="icon">
+                        <img class="img-fluid" src="resources/img/fact-workshop.png" alt="work">
+                    </div>
+                    <div class="text">
+                        <h4> 47</h4>
+                    <p>Workshops</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="icon">
+                        <img class="img-fluid" src="resources/img/fact-country.png" alt="work"> 
+                    </div>
+                    <div class="text">
+                        <h4>88</h4>
+                        <p>Countries</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="icon">
+                        <img class="img-fluid" src="resources/img/fact-speaker.png" alt="work"> 
+                    </div>
+                    <div class="text">
+                        <h4>50</h4>
+                        <p>Speakers</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="icon">
+                        <img class="img-fluid" src="resources/img/fact-sponsor.png" alt="work"> 
+                    </div>
+                    <div class="text">
+                        <h4>40</h4>
+                        <p>Sponsors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="speaker">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container">
+            <div id="all_speaker_content">
+                <div class="speakre_header">
+                    <p>Revolutionizing the World </p>
+                    <h2> Singer and Speakers</h2>
+                    <hr>
+                </div>
+                <div class="all_speaker_img">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                            <div class="speaker_img">
+                                <img class="img-fluid" src="resources/img/177382477_1503186436685006_2147080601370431003_n.jpg" alt="">
+                            </div>
+                            <div class="speaker_icon">
+                                <h2>ayman sadiq</h2>
+                                <p>Speakers</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                            <div class="speaker_img">
+                                <img class="img-fluid" src="resources/img/arfn rumi.jpg" alt="">
+                            </div>
+                            <div class="speaker_icon">
+                                <h2>arfin rumi</h2>
+                                <p>Singer</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                            <div class="speaker_img">
+                                <img class="img-fluid" src="resources/img/189476871_4063739530342691_4829084722197590698_n.jpg" alt="">
+                            </div>
+                            <div class="speaker_icon">
+                                <h2>solaiman shukhon</h2>
+                                <p>Speakers</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                            <div class="speaker_img">
+                                <img class="img-fluid" src="resources/img/3c47e7f3ec21b2f3ec82a47956ac4969.jpg" alt="">
+                            </div>
+                            <div class="speaker_icon">
+                                <h2>tashan khan</h2>
+                                <p> singer</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                            <div class="speaker_img">
+                                <img class="img-fluid" src="resources/img/67480156_575346706202772_2228666922260496384_n.jpg" alt="">
+                            </div>
+                            <div class="speaker_icon">
+                                <h2>Sabrina Porshi</h2>
+                                <p>singer</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                            <div class="speaker_img">
+                                <img class="img-fluid" src="resources/img/hridy.jpg" alt="">
+                            </div>
+                            <div class="speaker_icon">
+                                <h2>hridoy khan</h2>
+                                <p>Singer</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                            <div class="speaker_img">
+                                <img class="img-fluid" src="resources/img/Znv4IgVC_400x400.jpg" alt="">
+                            </div>
+                            <div class="speaker_icon">
+                                <h2>imran khan</h2>
+                                <p>singer</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                            <div class="speaker_img">
+                                <img class="img-fluid" src="resources/img/afran_nisho_3.jpg" alt="">
+                            </div>
+                            <div class="speaker_icon">
+                                <h2>afran nisho</h2>
+                                <p>actor</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3" id="col_2">
+                            <div class="speaker_img">
+                                <img class="img-fluid" src="resources/img/bc965f0ce4e38f840de97942c55b3e2d.jpg" alt="">
+                            </div>
+                            <div class="speaker_icon">
+                                <h2>salman muqtadir</h2>
+                                <p>Speakers</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-3 display" id="col_2"  >
+                            <div class="speaker_img">
+                                <img class="img-fluid" src="resources/img/189476871_4063739530342691_4829084722197590698_n.jpg" alt="">
+                            </div>
+                            <div class="speaker_icon">
+                                <h2>solaiman shukhon</h2>
+                                <p>Speakers</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <a id="btn" href="#">see more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="event"> 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            <div class="container">
+                <div id="event_all">
+                    <div class="event_header">
+                        <p>Don't Miss a Thing</p>
+                        <h2>Event Programme</h2>
+                        <h3>Sunday, 7th Aug</h3>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 py-4" id="col_2">
+                            <div class="event_img">
+                                <img class="img-fluid" src="resources/img/speaker1.jpg" alt="spk1">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 py-4" id="col_2">
+                            <div class="event_text">
+                                <strong>Edward C. Horner</strong>
+                                <h2>Reinventing Experiences to All</h2>
+                                <p>Throw myself down teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable.</p>
+                                <a href="#">see more</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 py-4" id="col_2">
+                            <div class="event_img">
+                                <img class="img-fluid" src="resources/img/speaker5.jpg" alt="spk1">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 py-4" id="col_2">
+                            <div class="event_text">
+                                <strong>Edward C. Horner</strong>
+                                <h2>Reinventing Experiences to All</h2>
+                                <p>Throw myself down teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable.</p>
+                                <a href="#">see more</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 py-4" id="col_2" >
+                            <div class="event_img">
+                                <img class="img-fluid" src="resources/img/speaker3.jpg" alt="spk1">
+                            </div>
+                        </div>
+                        <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 py-4" id="col_2">
+                            <div class="event_text">
+                                <strong>Edward C. Horner</strong>
+                                <h2>Reinventing Experiences to All</h2>
+                                <p>Throw myself down teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable.</p>
+                                <a href="#">see more</a>
+                            </div>
+                        </div>
+                        <a id="btn" href="#">PDF Dowanlode</a>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="subscribe">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container">
+            <div class="all_subscribe">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lx-6 col-lg-6" id="col_2">
+                        <div class="sub_text">
+                            <h2>Subscribe Newsletter</h2>
+                            <p>Be the first to hear about our updates</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lx-6 col-lg-6" id="col_2">
+                        <div class="input-group">
+                            <input type="text " placeholder="Enter Your E-mail" class="form-control">
+                            <div class="input-group-append">
+                                <a href="#">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="sponsors">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container">
+            <div class="all_sponsors">
+                <div class="sponsors_header">
+                    <p>Supporting Our Project</p>
+                    <h2>Event Sponsors</h2>
+                    <strong>Platinum Sponsors
+                        Silver Sponsors
+                        Creative Partners
+                        </strong>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-5">
+                        <div class="sponsors_content">
+                            <h2>Early Bird</h2><hr>
+                            <p>$ <span>219</span> /Person</p>
+                            <ul>
+                                <li>
+                                    <span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li>
+                                <li>
+                                    <span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li><li><span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li><li><span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li><li>
+                                    <span><i class="fas fa-times text-danger"></i>Meet with Favorite Speakers</span>
+                                </li><li>
+                                    <span><i class="fas fa-times text-danger"></i>Meet with Favorite Speakers</span>
+                                </li>
+                            </ul>
+                            <span id="btn"><i class="fas fa-ticket-alt"></i><a  href="#">Join Now</a></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-5">
+                        <div class="sponsors_content">
+                            <h2>Regular</h2><hr>
+                            <p>$ <span>219</span> /Person</p>
+                            <ul>
+                                <li>
+                                    <span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li>
+                                <li>
+                                    <span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li><li><span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li><li><span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li><li>
+                                    <span><i class="fas fa-times text-danger"></i>Meet with Favorite Speakers</span>
+                                </li><li>
+                                    <span><i class="fas fa-times text-danger"></i>Meet with Favorite Speakers</span>
+                                </li>
+                            </ul>
+                            <span id="btn"><i class="fas fa-ticket-alt"></i><a  href="#">Join Now</a></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-5">
+                        <div class="sponsors_content">
+                            <h2>Last Chance</h2><hr>
+                            <p>$ <span>219</span> /Person</p>
+                            <ul>
+                                <li>
+                                    <span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li>
+                                <li>
+                                    <span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li><li><span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li><li><span><i class="fas fa-check text-info"></i>Get Access to all Sessions</span>
+                                </li><li>
+                                    <span><i class="fas fa-times text-danger"></i>Meet with Favorite Speakers</span>
+                                </li><li>
+                                    <span><i class="fas fa-times text-danger"></i>Meet with Favorite Speakers</span>
+                                </li>
+                            </ul>
+                            <span id="btn"><i class="fas fa-ticket-alt"></i><a  href="#">Join Now</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="blog">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container">
+            <div class="blog_header">
+                <h2>Event Blog</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, nobis.</p>
+                <hr>
+            </div>
+            <div class="all_blog">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-4">
+                        <div class="blog_content">
+                            <div class="blog_img">
+                                <img class="img-fluid" src="resources/img/blog1.jpg" alt="blog1">
+                                <p>  01 <br/> August</p>
+                            </div>
+                            <div class="blog_text">
+                                <a href="#">3 Best Practices for Keeping Your Corporate Event Clients Happy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-4">
+                        <div class="blog_content">
+                            <div class="blog_img">
+                                <img class="img-fluid" src="resources/img/blog2.jpg" alt="blog1">
+                                <p>  10 <br/> August</p>
+                            </div>
+                            <div class="blog_text">
+                                <a href="#">3 Best Practices for Keeping Your Corporate Event Clients Happy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 py-4">
+                        <div class="blog_content">
+                            <div class="blog_img">
+                                <img class="img-fluid" src="resources/img/blog3.jpg" alt="blog1">
+                                <p>  25 <br/> August</p>
+                            </div>
+                            <div class="blog_text">
+                                <a href="#">3 Best Practices for Keeping Your Corporate Event Clients Happy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="venue">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container">
+            <div class="venue_header">
+                <h2>Venue </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quas beatae ratione fugit distinctio assumenda dolores quia maxime incidunt enim.</p><hr>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <div class="venue_content">
+                        <span><i class="fas fa-phone"></i> <strong>Phone:</strong>
+                            +1(0123)</span><br/>
+                        <span><i class="fas fa-envelope"></i><strong>Email:</strong>
+                            support@example.com 
+                            </span><br/>
+                            <span> 
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Address:</strong>
+                                Jurys Inn Brighton Waterfront Hotel
+                            </span>
+                            <p> <span>Note :</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum, nemo aut harum exercitationem inventore fugit. Repellat exercitationem sed at?</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 pt-3">
+                    <div class="venue_img">
+                        <img src="resources/img/harbour-bridge-landmark-cityscape-structure-wallpaper-preview.jpg" class="img-fluid" alt="venue">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="detels">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="detels_content">
+                        <div class="text-center">
+                            <img src="resources/img/transport.png" class="img-fluid" alt="plane">
+                            <h4>Transport</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic impedit maxime, magnam corrupti consequatur explicabo quaerat ullam recusandae voluptas totam.</p>
+                    <a href="#">see more</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="detels_content">
+                        <div class="text-center">
+                            <img src="resources/img/food.png" class="img-fluid" alt="plane">
+                    <h4>Transport</h4> 
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic impedit maxime, magnam corrupti consequatur explicabo quaerat ullam recusandae voluptas totam.</p> 
+                        <a href="#">see more</a>
+                    </div> 
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                    <div class="detels_content">
+                        <div class="text-center">
+                            <img src="resources/img/hotel.png" class="img-fluid" alt="plane">
+                            <h4>Transport</h4>
+                        </div> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic impedit maxime, magnam corrupti consequatur explicabo quaerat ullam recusandae voluptas totam.</p>
+                    <a href="#">see more</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section id="content">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container">
+            <div class="content_header">
+                <h2>Contact</h2>
+                <hr>
+            </div>
+            <div class="contact_content">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 py-3">
+                        <div class="content_text">
+                            <label for="name">Name</label>
+                            <input type="text " class="form-control" placeholder="Name">
+                            
+                            <label class="pt-2" for="email">E-mail</label>
+                            <input type="text " class="form-control" placeholder="E-mail">
+    
+                            <label class="py-3"  for="comment">Comment</label>
+                            <textarea class="form-control" placeholder="What's Do Your Minds........." name="comment" id="" cols="30" rows="10"></textarea>
+                            <a  id="btn"  href="#">Submit</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 py-3">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d326472.24516085803!2d-0.12740472922974222!3d51.48700515072821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e1!3m2!1sen!2sbd!4v1625818988928!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <footer id="about">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-lg-6-xl-6  py-3">
+                    <div class="companey_logo ">
+                        <img class="img-fluid" src="resources/img/footer-logo (1).png" alt="logo">
+                    </div>
+                    <div class="follow">
+                        <h3>Follow Now</h3><hr>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li> 
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> 
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quos aspernatur eligendi optio dolorum nobis! Delectus ipsum possimus, accusamus, aliquam tempore officia amet hic minus consequuntur laborum tenetur perspiciatis atque.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-lg-6-xl-6 py-3">
+                    <div class="footer_about">
+                        <h2>About</h2><hr>
+                    </div>
+                    <div class="footer_item">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Servises</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Location</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-center">
+            <h1 style="color: #888;font-style: italic; font-size: 2.5rem; padding-top: 3rem;">Rashid Khan</h1>
+            </div> -->
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,133.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </footer>
+    <script src="vendors/js/jQuery.js"></script>
+    <script src="vendors/js/aos.js"></script>
+    <script src="vendors/js/bootstrap.min.js"></script>
+    <script src="vendors/js/popper.min.js"></script>
+    <script src="vendors/js/typed.min.js"></script>
+    <script src="vendors/js/owl.carousel.min.js"></script>
+    <script src="resources/js/min.js"></script>
+</body>
+</html>

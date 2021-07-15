@@ -1,0 +1,117 @@
+@media only screen and (max-width:992px) {
+    html{
+        font-size: 55%;
+    }
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_img { 
+        max-height: 24rem; 
+    }
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_icon { 
+        top: 53%;
+    }
+    #sponsors .all_sponsors .row .sponsors_content ul li span {
+        font-size: 1.2rem;
+    }
+    #blog .all_blog .row .blog_content .blog_img p {
+        position: absolute;
+        top: 0%;
+        left: 3%;
+    }
+}
+@media only screen and (max-width:767px) {
+    #events .event_video_list ul li p{
+        font-size: 1rem;
+    }
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_img {
+        max-height: 16rem;
+    }
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_icon h2 {
+        font-size: 2rem;
+        padding-left: .8rem;
+    }
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_icon P {
+        font-size: 2rem;
+        padding-left: .8rem;
+    }
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_icon {
+        top: 45%;
+    }
+}
+@media only screen and (max-width:575px) {
+    #events .event_video_list ul li p{
+        font-size: 1.8rem;
+    }
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_img {
+        max-height: 29rem;
+    }
+    .hide{
+        display: none;
+    }
+    #about .row .companey_logo {
+        margin-top: -3.5rem;
+    }
+    #video_plyer { 
+        top: 125.5%;
+        left: 2.5%;
+    }
+    header nav .menu_all .menu_mane .menu_items { 
+        display: none;
+    }
+    header nav .mobile_menu .menu_icon{ 
+        display: block;
+    }
+    .display{
+        display: block;
+    }
+}
+@media only screen and (max-width:495px) {
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_img {
+        max-height: 23rem;
+    }
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_icon {
+        top: 47%;
+    }
+    #video_plyer {
+        top: 123.9%;
+        left: 2.5%;
+    }
+}
+@media only screen and (max-width:375px) {
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_img {
+        max-height: 25rem;
+    }
+    html{
+        font-size: 40%;
+    }
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_icon {
+        top: 55%;
+    }
+    #video_plyer {
+        top: 121.7%;
+        left: 2.5%;
+    }
+}
+@media only screen and (max-width:295px) {
+    html{
+        font-size: 36%;
+    }
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_img {
+        max-height: 17rem;
+    }
+    header .bannar_text h1 {
+        font-size: 3rem;
+    }
+    header .bannar_text h2 {
+        padding: 1.5rem 0rem;
+        font-size: 2rem;
+    }
+    header .bannar_text p {
+        font-size: 1.8rem;
+    }
+    #speaker #all_speaker_content .all_speaker_img .row .col-sm-4 .speaker_icon {
+        top: 44%;
+    }
+    #video_plyer {
+        top: 135.2%;
+        left: 2.5%;
+    }
+}
