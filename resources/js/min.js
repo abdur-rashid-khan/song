@@ -60,7 +60,7 @@ let mins=document.querySelector('.min .number');
 let seco=document.querySelector('.secound .number');
 const time= setInterval(() => {
     var carrent=new Date().getTime();
-    var lounce=new Date('july 25,2021 13:59:58').getTime();
+    var lounce=new Date('july 25,2022 13:59:58').getTime();
     var dur=lounce-carrent;
     var days=Math.floor(dur/(1000*60*60*24));
     var horse=Math.floor((dur%(1000*60*60*24))/(1000*60*60));
